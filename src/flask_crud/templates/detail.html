@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ユーザーの詳細情報</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ユーザーの詳細情報</h1>
+    <li>id: {{user.id}}</li>
+    <li>name: {{user.name}}</li>
+    <a href="{{ url_for('index_users') }}">一覧に戻る</a>
+</body>
+</html>

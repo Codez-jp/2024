@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ユーザー一覧</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ユーザー一覧</h1>
+    <a href="{{ url_for('new_user') }}">＋新規追加</a>
+    <table>
+        <tr>
+            <th>名前</th>
+            <th>操作1</th>
+            <th>操作2</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{user.name}}</td>
+            <td><a href="{{ url_for('update_user', id=user.id) }}">更新</a></td>
+            <td><a href="{{ url_for('detail_user', id=user.id) }}">詳細</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

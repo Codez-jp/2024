@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ユーザーの{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ユーザーの{{title}}</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        {% if user %}
+        <input type="text" id="name" name="name" value={{user.name}} required>
+        {% else %}
+        <input type="text" id="name" name="name" required>
+        {% endif %}
+        <input type="submit" value="登録">
+    </form>
+</body>
+</html>
