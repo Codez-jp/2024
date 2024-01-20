@@ -2,11 +2,17 @@
 import os
 
 # Flask関連
-from flask import Flask, request, render_template, redirect, jsonify
+from flask import Flask
+from flask import request
+from flask import render_template
+from flask import redirect
+from flask import jsonify
 
 # SQLAlchemy関連
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.orm import Mapped
+from sqlalchemy.orm import mapped_column
 SQLALCHEMY_DB_NAME = 'sqlite.db'
 # データベースを作成するための基底クラスとして Base クラスを SQLAlchemy
 # の DeclarativeBase クラスを継承する形で定義する。
