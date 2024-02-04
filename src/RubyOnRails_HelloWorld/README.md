@@ -6,12 +6,12 @@ https://paiza.cloud
 
 ## 2. プロジェクトを作成する
 ```bash
-$ rails new myApp
+$ rails new helloWorld
 ```
 
 ## 3. プロジェクトのディレクトリに移動する
 ```bash
-$ cd myApp
+$ cd helloWorld
 ```
 
 ## 4. サーバーを起動する
@@ -22,3 +22,10 @@ $ rails server
 ## 5. ブラウザでアクセスする
 - ブラウザで http://localhost:3000 にアクセスする
 - Ruby on Rails のデフォルトページが表示されれば成功
+
+![alt text](image.png)
+
+## 参考までに
+以下がプロジェクトのディレクトリ構造  
+これらが、コマンド一発で生成される。
+![alt text](image-1.png)
