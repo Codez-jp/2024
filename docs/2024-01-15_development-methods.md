@@ -135,4 +135,4 @@ USDM はユースケース図ではなく、表形式で表すこと一般的で
 など
 
 #### 記述例
-- [USDM](./USDM-sample.md)
+- [USDM](./UseCase-sample.md)
